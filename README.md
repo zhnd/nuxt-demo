@@ -13,3 +13,35 @@ $ npm run dev
 $ npm run build
 $ npm run start
 ```
+
+## 项目结构
+
+```
+├─assets                   //
+│
+├─components               //
+│
+├─layouts                  //
+│
+├─middleware               //
+│ ├─auth.js
+│
+├─pages                    //
+│
+├─plugins                  //
+│ ├─api.js
+│ ├─axios.js
+│ ├─element-ui.js          //
+│ ├─mock.js                //
+│
+├─server                   //
+│ ├─index.js
+│
+├─server-middleware        //
+│
+├─static                   //
+│
+├─store                    //
+│
+├─nuxt.config.js           //
+```
