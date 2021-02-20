@@ -14,6 +14,9 @@ $ npm run build
 $ npm run start
 ```
 
+## 介绍
+f12微信公众平台写的一个基于 `Nuxt.js` 的服务端渲染demo，主要使用了 `nuxt` + `koa` + `axios` + `vuex` + `element-ui` + `mockjs`。
+
 ## 项目结构
 
 ```
@@ -45,3 +48,27 @@ $ npm run start
 │
 ├─nuxt.config.js           //
 ```
+
+## 注意
+
+mockjs和jsencrypt在nuxt下使用各有一个报错，所以需要改动一下源码：
+
+node_modules/mockjs/dist/mock.js
+```
+8305    }
+8306
+8307    MockXMLHttpRequest.prototype.upload = createNativeXMLHttpRequest().upload
+8308
+8309    // 如果未找到匹配的数据模板，则采用原生 XHR 发送请求。
+```
+
+node_modules/jsencrypt/lib/lib/jsbn/rng.js
+```
+10    var t = void 0;
+11    var window = {};
+12    if (window.crypto && window.crypto.getRandomValues) {
+```
+
+## License
+
+[MIT](LICENSE)
