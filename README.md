@@ -14,6 +14,8 @@ $ npm run build
 $ npm run start
 ```
 
+访问：http://localhost:3000（admin / a123456）、http://localhost:3000/s/YdnahSombc9oqyr3xcbdcE
+
 ## 介绍
 f12微信公众平台写的一个基于 `Nuxt.js` 的服务端渲染demo，主要使用了 `nuxt` + `koa` + `axios` + `vuex` + `element-ui` + `mockjs`。
 
